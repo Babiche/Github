@@ -16,7 +16,7 @@ module Algorithm
       @score = if company.type == 'Unclaimed Company'
                  count_buckets_known >= REQUIRED_BUCKETS_KNOWN_NO_USER ? calc_total_score : nil
                else
-                 count_buckets_known >= REQUIRED_BUCKETS_KNOWN ? calc_total_score : nil
+                 count_buckets_known >= REQUIRED_BUCKETS_KNOWN         ? calc_total_score : nil
                end
     end
 
